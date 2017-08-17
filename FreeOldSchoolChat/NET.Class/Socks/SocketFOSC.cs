@@ -11,9 +11,15 @@ namespace NET.Class.Socks
         private IPEndPoint _IPEP;
         private EndPoint _EP;
         private int _PORT = 0;
+        private byte[] _ByteData;
         #endregion
 
         #region Public Methods
+        /// <summary>
+        /// Constructor - make the Socket
+        /// </summary>
+        /// <param name="usedSck"> receive the socket that you want to use</param>
+        /// <param name="usedPort">receive the port that you want to use</param>
         public SocketFOSC(Socket usedSck, int usedPort)
         {
             _PORT = usedPort;
@@ -34,6 +40,14 @@ namespace NET.Class.Socks
             {
                 _PORT = 0;
             }
+        }
+
+        /// <summary>
+        /// Start to listen the network
+        /// </summary>
+        public void SocketFOSC_Start()
+        {
+
         }
         #endregion
     }
