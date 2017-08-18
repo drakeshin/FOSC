@@ -34,7 +34,8 @@ namespace NET.Class.Socks
             }
             catch (SocketException scke)
             {
-                throw scke;
+                System.Console.WriteLine("[ERRO]" + scke.Message);
+                //throw scke;
             }
             finally
             {
@@ -47,7 +48,14 @@ namespace NET.Class.Socks
         /// </summary>
         public void SocketFOSC_Start()
         {
+            try
+            {
+                //_Socket.BeginReceiveFrom();
+            }
+            catch(Exception e)
+            {
 
+            }
         }
         #endregion
     }
