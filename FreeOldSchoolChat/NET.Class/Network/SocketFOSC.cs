@@ -32,7 +32,7 @@ namespace NET.Class.Socks
 
 
             }
-            catch(SocketException scke)
+            catch (SocketException scke)
             {
                 throw scke;
             }
